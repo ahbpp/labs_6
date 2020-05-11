@@ -1,0 +1,6 @@
+sbt/predict/services/PredictService.class
+sbt/predict/controllers/Viewer.class
+sbt/predict/utils/MSR.class
+sbt/predict/Application.class
+sbt/predict/utils/Utils.class
+sbt/predict/controllers/PredictController.class

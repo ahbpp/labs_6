@@ -1,0 +1,12 @@
+sbt/weather/parser/MaxTempreture.class
+sbt/weather/jpa_data/EntityRate.class
+sbt/weather/parser/Daily.class
+sbt/weather/controllers/Viewer.class
+sbt/weather/services/WeatherService.class
+sbt/weather/parser/Data.class
+sbt/weather/parser/Hourly.class
+sbt/weather/controllers/WeatherController.class
+sbt/weather/jpa_data/RateCrudRepository.class
+sbt/weather/utils/Utils.class
+sbt/weather/Application.class
+sbt/weather/responsers/ResponserToWheather.class

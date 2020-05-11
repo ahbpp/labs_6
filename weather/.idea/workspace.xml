@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="gs-spring-boot:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4600f613-bb31-4f9f-9356-d7f863f986be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/gs_spring_boot_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/gs_spring_boot_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gs-spring-boot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/controllers/RBCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/controllers/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/controllers/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/controllers/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/jpa_data/EntityRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/jpa_data/EntityRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/jpa_data/RateCrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/jpa_data/RateCrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/parser/Daily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/parser/Daily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/parser/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/parser/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/parser/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/parser/Hourly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/parser/MaxTempreture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/parser/MaxTempreture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/responsers/ResponserToRBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/responsers/ResponserToWheather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/responsers/ResponserToWheather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/services/PredictService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/services/RBCService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/services/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/services/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/utils/MSR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sbt/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sbt/weather/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sbt/RBCControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sbt/services/RBCServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sbt/services/ViewerServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sbt/services/WeatherServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sbt/weather/services/WeatherServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sbt/utils/MSRTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sbt/utils/UtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sbt/weather/utils/UtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/controllers/RBCController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/controllers/Viewer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/jpa_data/EntityRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/jpa_data/RateCrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/parser/Daily.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/parser/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/parser/Hourly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/parser/MaxTempreture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/responsers/ResponserToRBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/responsers/ResponserToWheather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/services/PredictService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/services/RBCService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/services/WeatherService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/utils/MSR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sbt/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-0.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-spring-boot-0.1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sbt.RBCControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sbt.services.RBCServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sbt.services.ViewerServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sbt.services.WeatherServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sbt.utils.MSRTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-sbt.utils.UtilsTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sbt.RBCControllerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sbt.services.RBCServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sbt.services.ViewerServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sbt.services.WeatherServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sbt.utils.MSRTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/sbt.utils.UtilsTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sbt/RBCControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sbt/services/RBCServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sbt/services/ViewerServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sbt/services/WeatherServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sbt/utils/MSRTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/sbt/utils/UtilsTest.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="202" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/utils/UtilsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/services/WeatherService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/controllers/WeatherController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jpa</find>
+      <find>sbt.jpa_data.RateCrudRepository;</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/hello/RBKServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hello/RBCServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hello/Memory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/RBCController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/RBCService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hello/RBCControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/jpa_data/Entity.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/jpa_data/EntityRate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/jpa_data/Repository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/jpa_data/RateCrudRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/Memory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/rbc.html" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/RBCController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/RBCService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/services/ResponserToRBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/utils/ArrayUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/utils/ArrayUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/RBCControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/utils/MSR.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/utils/UtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/utils/MSRTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/services/PredictServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/RBCServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/jpa_data/RateCrudRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/controllers/Predict.java" />
+        <option value="$PROJECT_DIR$/ServiceTest.postman_collection.json" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/services/WeatherServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/responsers/ResponserToWheather.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/parser/Hourly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/services/WeatherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/services/RBCService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/parser/MaxTempreture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/jpa_data/EntityRate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/responsers/ResponserToRBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/services/PredictService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/controllers/Viewer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/controllers/RBCController.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ru.sbt.prac.lab-master.rbc.iml" />
+        <option value="$PROJECT_DIR$/rbc.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/weather/controllers/RBCController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/weather/WeatherControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/weather/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sbt/weather/services/ViewerServiceTest.java" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/main/java/sbt/weather/controllers/WeatherController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gs-spring-boot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gs-spring-boot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="hello" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="gs-spring-boot" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gs-spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5045977" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="sbt.services" />
+      <recent name="sbt.utils" />
+      <recent name="hello" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="sbt.services" />
+      <recent name="sbt" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rbc" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/sbt/services" />
+      <recent name="$PROJECT_DIR$/src/main/java/sbt" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="sbt.services in gs-spring-boot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sbt.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sbt.services" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gs-spring-boot.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/classes/artifacts/gs_spring_boot_jar/gs-spring-boot.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="weather" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sbt.weather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sbt.weather.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="weather" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sbt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sbt.Application" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="9" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBKService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="weather" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="sbt.services.RBCService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8111" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="JAR Application.gs-spring-boot.jar" />
+      <item itemvalue="JUnit.sbt.services in gs-spring-boot" />
+      <item itemvalue="Spring Boot.RBKService" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="JAR Application.gs-spring-boot.jar" />
+        <item itemvalue="JUnit.sbt.services in gs-spring-boot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4600f613-bb31-4f9f-9356-d7f863f986be" name="Default Changelist" comment="" />
+      <created>1573119348411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573119348411</updated>
+      <workItem from="1573119354433" duration="8103000" />
+      <workItem from="1573678997133" duration="5254000" />
+      <workItem from="1573721181375" duration="10917000" />
+      <workItem from="1574879890004" duration="949000" />
+      <workItem from="1574956687637" duration="5779000" />
+      <workItem from="1575220058439" duration="5092000" />
+      <workItem from="1575538761465" duration="10317000" />
+      <workItem from="1576152711166" duration="516000" />
+      <workItem from="1576418145610" duration="8396000" />
+      <workItem from="1581427618703" duration="2742000" />
+      <workItem from="1584298896735" duration="3770000" />
+      <workItem from="1584388716528" duration="4299000" />
+      <workItem from="1584393738241" duration="1864000" />
+      <workItem from="1584446550484" duration="2819000" />
+      <workItem from="1584990786603" duration="1022000" />
+      <workItem from="1584997369119" duration="522000" />
+      <workItem from="1584997923432" duration="170000" />
+      <workItem from="1585053226398" duration="869000" />
+      <workItem from="1585055429933" duration="6091000" />
+      <workItem from="1585065095211" duration="1048000" />
+      <workItem from="1585088058808" duration="441000" />
+      <workItem from="1586123904131" duration="1365000" />
+      <workItem from="1588525124493" duration="336000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="WeatherServiceTest - 2019.12.15 at 21h 42m 00s.xml">
+      <configuration name="WeatherServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherServiceTest - 2019.12.15 at 21h 43m 11s.xml">
+      <configuration name="WeatherServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherServiceTest - 2019.12.15 at 21h 49m 47s.xml">
+      <configuration name="WeatherServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherServiceTest - 2019.12.15 at 21h 51m 12s.xml">
+      <configuration name="WeatherServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherServiceTest - 2019.12.15 at 22h 24m 47s.xml">
+      <configuration name="WeatherServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherServiceTest - 2019.12.15 at 22h 25m 34s.xml">
+      <configuration name="WeatherServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBCServiceTest - 2019.12.15 at 22h 34m 25s.xml">
+      <configuration name="RBCServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBCServiceTest - 2019.12.15 at 22h 35m 52s.xml">
+      <configuration name="RBCServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBCServiceTest - 2019.12.15 at 22h 51m 56s.xml">
+      <configuration name="RBCServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="sbt_services_in_gs-spring-boot - 2019.12.15 at 23h 34m 25s.xml">
+      <configuration name="sbt.services in gs-spring-boot" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="85997000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31831187" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.42048192" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32777777" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32777777" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49427754" visible="true" weight="0.44216868" />
+      <window_info anchor="bottom" id="Docker" order="9" sideWeight="0.7052933" weight="0.526506" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50572246" side_tool="true" visible="true" weight="0.44216868" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32771084" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32916668" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49723756" weight="0.3297568" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50276244" side_tool="true" weight="0.3297568" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gs_spring_boot$WeatherServiceTest.ic" NAME="WeatherServiceTest Coverage Results" MODIFIED="1576435854852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sbt.services.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/rbc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/Configuration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/responsers.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/utils/MSR.java" />
+    <entry file="file://$PROJECT_DIR$/ServiceTest.postman_collection.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-960">
+          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/utils/MSRTest.java" />
+    <entry file="file://$PROJECT_DIR$/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/parser/Daily.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/parser/Data.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/parser/Hourly.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/parser/MaxTempreture.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/jpa_data/RateCrudRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/jpa_data/EntityRate.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/services/PredictService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="172" column="9" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/services/RBCService.java" />
+    <entry file="file://$PROJECT_DIR$/ru.sbt.prac.lab-master.rbc.iml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/controllers/Viewer.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/sbt/Application.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/responsers/ResponserToWheather.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/responsers/ResponserToRBC.java" />
+    <entry file="file://$PROJECT_DIR$/rbc/src/main/java/sbt/utils/MSR.java" />
+    <entry file="file://$PROJECT_DIR$/rbc/src/main/java/sbt/utils/Utils.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="135" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbc/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/rbc/src/main/java/sbt/Application.java" />
+    <entry file="file://$PROJECT_DIR$/rbc/gradlew" />
+    <entry file="file://$PROJECT_DIR$/rbc/gradlew.bat" />
+    <entry file="file://$PROJECT_DIR$/rbc/mvnw" />
+    <entry file="file://$PROJECT_DIR$/rbc/mvnw.cmd" />
+    <entry file="file://$PROJECT_DIR$/rbc/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/rbc/rbc.iml" />
+    <entry file="file://$PROJECT_DIR$/rbc.iml" />
+    <entry file="file://$PROJECT_DIR$/weather.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/WeatherControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/services/RBCServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/services/ViewerServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/services/WeatherServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sbt/weather/utils/UtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/services/WeatherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/controllers/WeatherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sbt/weather/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>gs-spring-boot:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (gs-spring-boot)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.springframework:spring-beans:5.1.8.RELEASE</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+version: '3'
+services:
+  weather:
+    build: ./weather
+    ports:
+      - "8111:8111"
+    image: "weather:0.4.0"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.17
+  rbc:
+    build: ./rbc
+    ports:
+      - "8110:8110"
+    image: "rbc:0.7.0"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.18
+  predict:
+    build: ./predict
+    ports:
+      - "8113:8113"
+    image: "predict:0.3.0"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.20
+
+  dbpostgresql:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: testdb
+      POSTGRES_USER: adminadmin
+      POSTGRES_PASSWORD: pwdpwd
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.19
+
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.16/21
+
+
