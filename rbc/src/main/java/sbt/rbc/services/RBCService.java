@@ -25,13 +25,9 @@ public class RBCService {
 
     private final DateFormat dateFormater = new SimpleDateFormat("yyyy/MM/dd");
 
-    @Autowired
-    private RestTemplate restBean;
 
     @Autowired
     private DbWorker dbWorker;
-
-    private Optional<RbcDB> rbсDb;
 
 
     @Autowired
