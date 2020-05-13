@@ -17,8 +17,7 @@ public class ResponserToRBC {
             ResponseEntity<String> response = restTemplate.getForEntity(url + lastdays, String.class);
             System.out.println("Result net = " + response.getBody());
             return response.getBody();
-        }
-        catch (Exception e){
+        } catch (Exception e){
             String data =
                     "USD000000TOD,2019-09-13,70.2225,64.7175,64.125,64.2725,725046000,64.3306\n" +
                             "USD000000TOD,2019-09-16,63.835,64.1675,63.57,64,1367191000,63.9049\n" +

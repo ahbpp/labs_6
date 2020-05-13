@@ -1,0 +1,91 @@
+---
+- hosts: rbc-server
+  remote_user: mftiedu
+  become: yes
+
+  vars:
+    ansible_become_user: root
+    ansible_become_password: cHONtic
+
+  tasks:
+    - name: delete previous directory
+      shell: rm -rf ./edu/karpov
+
+    - name: make a directory for rbc module
+      shell: mkdir edu/karpov/
+
+
+    - name: make a directory for rbc module
+      shell: mkdir edu/karpov/rbc
+
+    - name: make a directory for rbc module
+      shell: mkdir edu/karpov/rbc/target
+
+    - name: copy rbc module
+      copy:
+        src: ../rbc/target/rbc-0.9.0.jar
+        dest: edu/karpov/rbc/target
+
+    - name: copy rbc Dockerfile module
+      copy:
+        src: ../rbc/Dockerfile
+        dest: edu/karpov/rbc/
+
+    - name: copy docker-compose rbc module
+      copy:
+        src: ./docker-compose-rbc.yml
+        dest: edu/karpov/
+
+    - name: run a compose rbc file
+      shell: docker-compose -f ./edu/karpov/docker-compose-rbc.yml up -d
+
+- hosts: weather-predict-server
+  remote_user: edumfti
+  become: yes
+  tasks: 
+
+    - name: delete previous directory
+      shell: rm -rf ./edu/karpov
+
+    - name: make a directory
+      shell: mkdir edu/karpov/
+
+    - name: make a directory for predict module
+      shell: mkdir edu/karpov/predict
+
+    - name: make a directory for predict module
+      shell: mkdir edu/karpov/predict/target
+
+    - name: make a directory for weather module
+      shell: mkdir edu/karpov/weather
+
+    - name: make a directory for weather module
+      shell: mkdir edu/karpov/weather/target
+
+    - name: copy weather module
+      copy:
+        src: ../weather/target/weather-0.3.0.jar
+        dest: edu/karpov/weather/target
+
+    - name: copy wether Dockerfile module
+      copy:
+        src: ../weather/Dockerfile
+        dest: edu/karpov/weather/
+
+    - name: copy predict module
+      copy:
+        src: ../predict/target/predict-0.3.0.jar
+        dest: edu/karpov/predict/target
+
+    - name: copy predict Dockerfile module
+      copy:
+        src: ../predict/Dockerfile
+        dest: edu/karpov/predict/
+
+    - name: copy docker-compose weather-predict module
+      copy:
+        src: ./docker-compose-weather-predict.yml
+        dest: edu/karpov/
+
+    - name: run a compose predict weather file
+      shell: docker-compose -f ./edu/karpov/docker-compose-weather-predict.yml up -d

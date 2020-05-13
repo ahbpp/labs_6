@@ -37,8 +37,8 @@ public class RBCService {
         // here we save no time because we need only days (time will be 00:00:00).
         String currentDate = getDateNoTime();
         RbcDB rbk = new RbcDB(currentDate, dollar);
+
         dbWorker.save(rbk);
-        //System.out.println(dbWorker);
     }
 
     public static String getDateNoTime() {
@@ -54,11 +54,10 @@ public class RBCService {
         String currentDate = getDateNoTime();
         Optional<RbcDB> base_result = dbWorker.findByDate(currentDate);
         Optional<Double>  currency = base_result.map(RbcDB::getCurrency);
+        System.out.println(currency);
         if (currency.isPresent()) {
-            System.out.println("Base");
             return currency.get();
         }
-        System.out.println("Net");
         double result = utils.getMaxFromArray(getRateForPeriod(lastdays, responserToRBC));
         saveNewLine(result);
         return result;

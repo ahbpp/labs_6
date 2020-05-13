@@ -12,7 +12,9 @@ services:
     build: ./rbc
     ports:
       - "8110:8110"
-    image: "rbc:0.8.0"
+    image: "rbc:0.9.0"
+    depends_on:
+      - dbpostgresql
     networks:
       vpcbr:
         ipv4_address: 10.5.0.18
@@ -38,11 +40,24 @@ services:
       vpcbr:
         ipv4_address: 10.5.0.19
 
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "5050:80"
+    depends_on:
+      - dbpostgresql
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@mydomain.com
+      - PGADMIN_DEFAULT_PASSWORD=postgres
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.21
+
 networks:
   vpcbr:
     driver: bridge
     ipam:
       config:
-        - subnet: 10.5.0.16/21
+        - subnet: 10.5.0.16/22
 
 

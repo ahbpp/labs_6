@@ -1,5 +1,5 @@
-CREATE TABLE IF NOT EXISTS rbcdb(
+CREATE TABLE IF NOT EXISTS rbcdb.rbcdb(
     id integer,
-    date varchar(20),
+    date varchar(50),
     currency double precision
 )

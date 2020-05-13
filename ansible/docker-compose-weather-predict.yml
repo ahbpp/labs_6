@@ -1,0 +1,14 @@
+version: '3'
+services:
+  weather:
+    build: ./weather
+    ports:
+      - "8111:8111"
+    image: "weather:0.4.0"
+
+  predict:
+    build: ./predict
+    ports:
+      - "8113:8113"
+    image: "predict:0.3.0"
+
