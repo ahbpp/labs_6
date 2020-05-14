@@ -30,6 +30,8 @@
       copy:
         src: ../rbc/Dockerfile
         dest: edu/karpov/rbc/
+        mode: 0777
+
 
     - name: copy docker-compose rbc module
       copy:
@@ -37,7 +39,7 @@
         dest: edu/karpov/
 
     - name: run a compose rbc file
-      shell: docker-compose -f ./edu/karpov/docker-compose-rbc.yml up -d
+      shell: sudo docker-compose -f ./edu/karpov/docker-compose-rbc.yml up -d
 
 - hosts: weather-predict-server
   remote_user: edumfti
@@ -71,6 +73,7 @@
       copy:
         src: ../weather/Dockerfile
         dest: edu/karpov/weather/
+        mode: 0777
 
     - name: copy predict module
       copy:
@@ -81,6 +84,7 @@
       copy:
         src: ../predict/Dockerfile
         dest: edu/karpov/predict/
+        mode: 0777
 
     - name: copy docker-compose weather-predict module
       copy:
