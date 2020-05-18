@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weather
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: weather
+  template:
+    metadata:
+      name: weather
+      labels:
+        app: weather
+    spec:
+      containers:
+        - name: weather
+          image: weather:0.4.0
+          imagePullPolicy: IfNotPresent
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: weather
+spec:
+  ports:
+    - port: 8111
+      targetPort: 8111
+  selector:
+    app: weather
+  type: LoadBalancer
