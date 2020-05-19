@@ -26,4 +26,10 @@ public class RBCController {
         return viewer;
     }
 
+    @RequestMapping(value = "/base", method = RequestMethod.GET)
+    @ResponseBody
+    public String base() {
+
+        return "base: " + service.getBase();
+    }
 }

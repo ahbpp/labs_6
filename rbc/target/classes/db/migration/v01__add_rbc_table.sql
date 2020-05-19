@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS rbcdb.rbcdb(
+CREATE TABLE IF NOT EXISTS rbcdbb(
     id integer,
     date varchar(50),
     currency double precision

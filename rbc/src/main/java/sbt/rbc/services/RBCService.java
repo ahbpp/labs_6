@@ -6,13 +6,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import sbt.rbc.DbWorker;
+import sbt.rbc.RbcDB;
 import sbt.rbc.responsers.ResponserToRBC;
 import sbt.rbc.utils.Utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import sbt.rbc.RbcDB;
 
 
 @Component
@@ -39,6 +39,9 @@ public class RBCService {
         RbcDB rbk = new RbcDB(currentDate, dollar);
 
         dbWorker.save(rbk);
+        System.out.println(rbk.getCurrency());
+
+
     }
 
     public static String getDateNoTime() {
@@ -55,6 +58,7 @@ public class RBCService {
         Optional<RbcDB> base_result = dbWorker.findByDate(currentDate);
         Optional<Double>  currency = base_result.map(RbcDB::getCurrency);
         System.out.println(currency);
+        System.out.println(dbWorker.findAll());
         if (currency.isPresent()) {
             return currency.get();
         }
@@ -80,6 +84,17 @@ public class RBCService {
             ans.add(Double.parseDouble(elements[elements.length - 1]));
         }
         return ans;
+    }
+    public List<String> getBase() {
+        Iterable<RbcDB> all_base = dbWorker.findAll();
+        List<String> base_list = new ArrayList<String>();
+        for (RbcDB rbcdb:all_base) {
+            base_list.add("date: " + rbcdb.getDate() + "\nrate: " + rbcdb.getCurrency());
+        }
+
+        return base_list;
+
+
     }
 
 }

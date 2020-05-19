@@ -4,7 +4,6 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rbcdb")
-
 public class RbcDB {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,4 +36,5 @@ public class RbcDB {
     public void setCurrency(Double currency) {
         this.currency = currency;
     }
+
 }
