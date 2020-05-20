@@ -1,13 +1,13 @@
 version: '3'
 services:
-  # weather:
-  #   build: ./weather
-  #   ports:
-  #     - "8111:8111"
-  #   image: "weather:0.4.0"
-  #   networks:
-  #     vpcbr:
-  #       ipv4_address: 10.5.0.17
+  weather:
+    build: ./weather
+    ports:
+      - "8111:8111"
+    image: "weather:0.4.0"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.17
   rbc:
     build: ./rbc
     ports:
@@ -18,14 +18,14 @@ services:
     networks:
       vpcbr:
         ipv4_address: 10.5.0.18
-  # predict:
-  #   build: ./predict
-  #   ports:
-  #     - "8113:8113"
-  #   image: "predict:0.3.0"
-  #   networks:
-  #     vpcbr:
-  #       ipv4_address: 10.5.0.20
+  predict:
+    build: ./predict
+    ports:
+      - "8113:8113"
+    image: "predict:0.3.0"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.20
 
   dbpostgresql:
     image: postgres
@@ -52,12 +52,22 @@ services:
     networks:
       vpcbr:
         ipv4_address: 10.5.0.21
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.22
 
 networks:
   vpcbr:
     driver: bridge
     ipam:
       config:
-        - subnet: 10.5.0.16/22
+        - subnet: 10.5.0.16/24
 
 
